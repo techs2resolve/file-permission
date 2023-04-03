@@ -1,0 +1,16 @@
+File permission
+
+cd /home/user/public_html/master/
+
+find . -type d -exec chmod 0755 {} \;
+
+find . -type f -exec chmod 0644 {} \;
+
+
+Creating tar file without .git and upload folder.
+
+tar --exclude='.git/' --exclude='upload' -cvzf python28-2-19.tar.gz .
+
+master/system/cache
+
+tar --exclude=‘master/.git' --exclude=‘master/system/cache/' -cvzf ronin9-11-22.tar.gz master
